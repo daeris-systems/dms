@@ -10,21 +10,29 @@
 <odoo>
     <record id="category_dms_security" model="ir.module.category">
         <field name="name">Documents</field>
+        <field name="description">Manage and share files and folders with portal users.</field>
+        <field name="sequence">150</field>
+        <field name="parent_id" ref="base.module_category_website"/>
     </record>
     <record id="group_dms_user" model="res.groups">
         <field name="name">User</field>
-        <field name="category_id" ref="category_dms_security" />
+        <field name="category_id" ref="dms.category_dms_security" />
         <field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
     </record>
     <record id="group_dms_manager" model="res.groups">
         <field name="name">Manager</field>
         <field name="implied_ids" eval="[(4, ref('group_dms_user'))]" />
-        <field name="category_id" ref="category_dms_security" />
+        <field name="category_id" ref="dms.category_dms_security" />
         <field
             name="users"
             eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
         />
     </record>
+
+    <record id="base.default_user" model="res.users">
+        <field name="groups_id" eval="[(4,ref('dms.group_dms_manager'))]"/>
+    </record>
+
     <record id="rule_multi_company_storage" model="ir.rule">
         <field name="name">DMS Storage multi-company</field>
         <field name="model_id" ref="model_dms_storage" />

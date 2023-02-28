@@ -15,7 +15,7 @@
         <field name="group_ids" eval="[(6, 0, [ref('base.group_portal')])]" />
     </record>
     <record id="access_group_03_demo" model="dms.access.group">
-        <field name="name">Only admin user</field>
+        <field name="name">Solo administrador</field>
         <field name="perm_create">True</field>
         <field name="perm_write">True</field>
         <field name="perm_unlink">True</field>

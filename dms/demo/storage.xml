@@ -7,11 +7,11 @@
   -->
 <odoo noupdate="1">
     <record id="storage_demo" model="dms.storage">
-        <field name="name">Documents Storage</field>
+        <field name="name">Almacenamiento de documentos</field>
         <field name="save_type">database</field>
     </record>
     <record id="storage_attachment_demo" model="dms.storage">
-        <field name="name">Attachment Storage</field>
+        <field name="name">Almacenamiento de ficheros</field>
         <field name="save_type">attachment</field>
         <field name="inherit_access_from_parent_record" eval="True" />
         <field name="include_message_attachments" eval="True" />

@@ -7,25 +7,25 @@
   -->
 <odoo noupdate="1">
     <record id="category_01_demo" model="dms.category">
-        <field name="name">Internal</field>
+        <field name="name">Interna</field>
     </record>
     <record id="category_02_demo" model="dms.category">
-        <field name="name">Human Resource</field>
+        <field name="name">RRHH</field>
         <field name="parent_id" ref="dms.category_01_demo" />
     </record>
     <record id="category_03_demo" model="dms.category">
-        <field name="name">Contracts</field>
+        <field name="name">Contratos</field>
         <field name="parent_id" ref="dms.category_02_demo" />
     </record>
     <record id="category_04_demo" model="dms.category">
-        <field name="name">Traveling</field>
+        <field name="name">Viajes</field>
         <field name="parent_id" ref="dms.category_02_demo" />
     </record>
     <record id="category_05_demo" model="dms.category">
-        <field name="name">External</field>
+        <field name="name">Externa</field>
     </record>
     <record id="category_06_demo" model="dms.category">
-        <field name="name">News</field>
+        <field name="name">Noticias</field>
         <field name="parent_id" ref="dms.category_05_demo" />
     </record>
 </odoo>

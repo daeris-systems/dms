@@ -7,22 +7,22 @@
   -->
 <odoo noupdate="1">
     <record id="tag_01_demo" model="dms.tag">
-        <field name="name">Customer</field>
+        <field name="name">Cliente</field>
         <field name="color">1</field>
         <field name="category_id" ref="category_03_demo" />
     </record>
     <record id="tag_02_demo" model="dms.tag">
-        <field name="name">Partner</field>
+        <field name="name">Empresa</field>
         <field name="color">2</field>
         <field name="category_id" ref="category_03_demo" />
     </record>
     <record id="tag_03_demo" model="dms.tag">
-        <field name="name">Project</field>
+        <field name="name">Proyecto</field>
         <field name="color">3</field>
         <field name="category_id" ref="category_04_demo" />
     </record>
     <record id="tag_04_demo" model="dms.tag">
-        <field name="name">Sales</field>
+        <field name="name">Ventas</field>
         <field name="color">4</field>
         <field name="category_id" ref="category_05_demo" />
     </record>
@@ -37,27 +37,27 @@
         <field name="category_id" ref="category_05_demo" />
     </record>
     <record id="tag_07_demo" model="dms.tag">
-        <field name="name">Accounting</field>
+        <field name="name">Contabilidad</field>
         <field name="color">7</field>
         <field name="category_id" ref="category_05_demo" />
     </record>
     <record id="tag_08_demo" model="dms.tag">
-        <field name="name">Customer Invoice</field>
+        <field name="name">Factura de cliente</field>
         <field name="color">8</field>
         <field name="category_id" ref="category_05_demo" />
     </record>
     <record id="tag_09_demo" model="dms.tag">
-        <field name="name">Vendor Bill</field>
+        <field name="name">Factura de proveedor</field>
         <field name="color">9</field>
         <field name="category_id" ref="category_05_demo" />
     </record>
     <record id="tag_10_demo" model="dms.tag">
-        <field name="name">Product</field>
+        <field name="name">Producto</field>
         <field name="color">10</field>
         <field name="category_id" ref="category_06_demo" />
     </record>
     <record id="tag_11_demo" model="dms.tag">
-        <field name="name">Contract</field>
+        <field name="name">Contrato</field>
         <field name="color">11</field>
         <field name="category_id" ref="category_01_demo" />
     </record>
