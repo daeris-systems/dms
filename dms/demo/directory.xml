@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
-
     Copyright 2017-2019 MuK IT GmbH
     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
-
   -->
 <odoo noupdate="1">
     <record id="directory_01_demo" model="dms.directory">
-        <field name="name">Documentos</field>
+        <field name="name">Documents</field>
         <field name="is_root_directory" eval="True" />
         <field name="parent_id" eval="False" />
         <field name="color" eval="1" />
@@ -42,7 +40,7 @@
         />
     </record>
     <record id="directory_04_demo" model="dms.directory">
-        <field name="name">Plantillas</field>
+        <field name="name">Templates</field>
         <field name="is_root_directory" eval="False" />
         <field name="color" eval="1" />
         <field name="parent_id" ref="dms.directory_01_demo" />
@@ -50,7 +48,7 @@
         <field name="tag_ids" eval="[(6, 0, [ref('dms.tag_07_demo')])]" />
     </record>
     <record id="directory_05_demo" model="dms.directory">
-        <field name="name">Fotos</field>
+        <field name="name">Photos</field>
         <field name="is_root_directory" eval="False" />
         <field name="color" eval="2" />
         <field name="category_id" ref="dms.category_02_demo" />
@@ -87,13 +85,13 @@
         <field name="parent_id" ref="dms.directory_02_demo" />
     </record>
     <record id="directory_09_demo" model="dms.directory">
-        <field name="name">Musica</field>
+        <field name="name">Music</field>
         <field name="is_root_directory" eval="False" />
         <field name="color" eval="2" />
         <field name="parent_id" ref="dms.directory_02_demo" />
     </record>
     <record id="directory_10_demo" model="dms.directory">
-        <field name="name">Gráficas</field>
+        <field name="name">Graphics</field>
         <field name="is_root_directory" eval="False" />
         <field name="parent_id" ref="dms.directory_02_demo" />
     </record>
@@ -113,7 +111,7 @@
         />
     </record>
     <record id="directory_12_demo" model="dms.directory">
-        <field name="name">Datos</field>
+        <field name="name">Data</field>
         <field name="is_root_directory" eval="False" />
         <field name="color" eval="1" />
         <field name="parent_id" ref="dms.directory_01_demo" />
@@ -123,20 +121,20 @@
         />
     </record>
     <record id="directory_13_demo" model="dms.directory">
-        <field name="name">Código</field>
+        <field name="name">Code</field>
         <field name="is_root_directory" eval="False" />
         <field name="color" eval="1" />
         <field name="category_id" ref="dms.category_01_demo" />
         <field name="parent_id" ref="dms.directory_01_demo" />
     </record>
     <record id="directory_14_demo" model="dms.directory">
-        <field name="name">Presentaciones</field>
+        <field name="name">Slides</field>
         <field name="is_root_directory" eval="False" />
         <field name="category_id" ref="dms.category_01_demo" />
         <field name="parent_id" ref="dms.directory_01_demo" />
     </record>
     <record id="directory_root_res_partner_demo" model="dms.directory">
-        <field name="name">Clientes</field>
+        <field name="name">Partners</field>
         <field name="is_root_directory" eval="True" />
         <field name="color" eval="1" />
         <field name="storage_id" ref="dms.storage_attachment_demo" />
